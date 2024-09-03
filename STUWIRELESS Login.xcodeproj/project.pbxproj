@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		206421D32BB54D2E00CD5A43 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 206421D22BB54D2E00CD5A43 /* LaunchAtLogin */; };
 		2070607A2BB3F14800E9DD4F /* Sjauth in Frameworks */ = {isa = PBXBuildFile; productRef = 207060792BB3F14800E9DD4F /* Sjauth */; };
+		20B5734F2C870CFB00255BEC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 20B5734E2C870CFB00255BEC /* README.md */; };
 		20C954DE2BB3FB010017E05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954DD2BB3FB010017E05E /* AppDelegate.swift */; };
 		20C954E62BB3FE340017E05E /* WakeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E52BB3FE340017E05E /* WakeDelegate.swift */; };
 		20C954E82BB3FEB80017E05E /* CredentialsLoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E72BB3FEB80017E05E /* CredentialsLoggingView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20B5734E2C870CFB00255BEC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		20C954DD2BB3FB010017E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C954E52BB3FE340017E05E /* WakeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeDelegate.swift; sourceTree = "<group>"; };
 		20C954E72BB3FEB80017E05E /* CredentialsLoggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoggingView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		20E66A492BB3062500F0AF08 = {
 			isa = PBXGroup;
 			children = (
+				20B5734E2C870CFB00255BEC /* README.md */,
 				20E66A542BB3062500F0AF08 /* STUWIRELESS Login */,
 				20E66A532BB3062500F0AF08 /* Products */,
 			);
@@ -171,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B5734F2C870CFB00255BEC /* README.md in Resources */,
 				20E66A5D2BB3062B00F0AF08 /* Preview Assets.xcassets in Resources */,
 				20E66A5A2BB3062B00F0AF08 /* Assets.xcassets in Resources */,
 			);
