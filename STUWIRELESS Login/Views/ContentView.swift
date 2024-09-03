@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+	
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+		VStack {
+			Text("This app will log you into STUWIRELESS when it wakes from sleep")
+				.font(.title3)
+				.bold()
+			CredentialsLoggingView()
+		}
+		.padding()
+		.frame(width: 600)
     }
+	
 }
 
 #Preview {

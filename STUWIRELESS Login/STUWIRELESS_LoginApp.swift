@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import ExtensionKit
 
 @main
 struct STUWIRELESS_LoginApp: App {
+	
+	@NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+	
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+		.windowResizabilityContentSize()
+		.windowStyle(.hiddenTitleBar)
     }
 }

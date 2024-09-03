@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206421D32BB54D2E00CD5A43 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 206421D22BB54D2E00CD5A43 /* LaunchAtLogin */; };
+		2070607A2BB3F14800E9DD4F /* Sjauth in Frameworks */ = {isa = PBXBuildFile; productRef = 207060792BB3F14800E9DD4F /* Sjauth */; };
+		20C954DE2BB3FB010017E05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954DD2BB3FB010017E05E /* AppDelegate.swift */; };
+		20C954E62BB3FE340017E05E /* WakeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E52BB3FE340017E05E /* WakeDelegate.swift */; };
+		20C954E82BB3FEB80017E05E /* CredentialsLoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E72BB3FEB80017E05E /* CredentialsLoggingView.swift */; };
+		20C954EB2BB3FF570017E05E /* ExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 20C954EA2BB3FF570017E05E /* ExtensionKit */; };
 		20E66A562BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E66A552BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift */; };
 		20E66A582BB3062500F0AF08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E66A572BB3062500F0AF08 /* ContentView.swift */; };
 		20E66A5A2BB3062B00F0AF08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E66A592BB3062B00F0AF08 /* Assets.xcassets */; };
@@ -14,12 +20,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20C954DD2BB3FB010017E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20C954E52BB3FE340017E05E /* WakeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeDelegate.swift; sourceTree = "<group>"; };
+		20C954E72BB3FEB80017E05E /* CredentialsLoggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoggingView.swift; sourceTree = "<group>"; };
 		20E66A522BB3062500F0AF08 /* STUWIRELESS Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STUWIRELESS Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E66A552BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUWIRELESS_LoginApp.swift; sourceTree = "<group>"; };
 		20E66A572BB3062500F0AF08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		20E66A592BB3062B00F0AF08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20E66A5C2BB3062B00F0AF08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20E66A5E2BB3062B00F0AF08 /* STUWIRELESS_Login.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = STUWIRELESS_Login.entitlements; sourceTree = "<group>"; };
+		20E66A682BB306FC00F0AF08 /* STUWIRELESS-Login-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "STUWIRELESS-Login-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +37,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206421D32BB54D2E00CD5A43 /* LaunchAtLogin in Frameworks */,
+				2070607A2BB3F14800E9DD4F /* Sjauth in Frameworks */,
+				20C954EB2BB3FF570017E05E /* ExtensionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20C954EC2BB3FFBC0017E05E /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				20C954E52BB3FE340017E05E /* WakeDelegate.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		20C954ED2BB3FFC40017E05E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20E66A572BB3062500F0AF08 /* ContentView.swift */,
+				20C954E72BB3FEB80017E05E /* CredentialsLoggingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		20E66A492BB3062500F0AF08 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +82,11 @@
 		20E66A542BB3062500F0AF08 /* STUWIRELESS Login */ = {
 			isa = PBXGroup;
 			children = (
+				20E66A682BB306FC00F0AF08 /* STUWIRELESS-Login-Info.plist */,
+				20C954DD2BB3FB010017E05E /* AppDelegate.swift */,
 				20E66A552BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift */,
-				20E66A572BB3062500F0AF08 /* ContentView.swift */,
+				20C954ED2BB3FFC40017E05E /* Views */,
+				20C954EC2BB3FFBC0017E05E /* Logic */,
 				20E66A592BB3062B00F0AF08 /* Assets.xcassets */,
 				20E66A5E2BB3062B00F0AF08 /* STUWIRELESS_Login.entitlements */,
 				20E66A5B2BB3062B00F0AF08 /* Preview Content */,
@@ -79,12 +112,18 @@
 				20E66A4E2BB3062500F0AF08 /* Sources */,
 				20E66A4F2BB3062500F0AF08 /* Frameworks */,
 				20E66A502BB3062500F0AF08 /* Resources */,
+				206421D42BB54EC000CD5A43 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "STUWIRELESS Login";
+			packageProductDependencies = (
+				207060792BB3F14800E9DD4F /* Sjauth */,
+				20C954EA2BB3FF570017E05E /* ExtensionKit */,
+				206421D22BB54D2E00CD5A43 /* LaunchAtLogin */,
+			);
 			productName = "STUWIRELESS Login";
 			productReference = 20E66A522BB3062500F0AF08 /* STUWIRELESS Login.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +152,11 @@
 				Base,
 			);
 			mainGroup = 20E66A492BB3062500F0AF08;
+			packageReferences = (
+				207060782BB3F14800E9DD4F /* XCRemoteSwiftPackageReference "Sjauth" */,
+				20C954E92BB3FF570017E05E /* XCRemoteSwiftPackageReference "ExtensionKit" */,
+				206421D12BB54D2E00CD5A43 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+			);
 			productRefGroup = 20E66A532BB3062500F0AF08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,13 +178,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		206421D42BB54EC000CD5A43 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20E66A4E2BB3062500F0AF08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C954E62BB3FE340017E05E /* WakeDelegate.swift in Sources */,
+				20C954DE2BB3FB010017E05E /* AppDelegate.swift in Sources */,
 				20E66A582BB3062500F0AF08 /* ContentView.swift in Sources */,
 				20E66A562BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift in Sources */,
+				20C954E82BB3FEB80017E05E /* CredentialsLoggingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +269,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,7 +326,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -278,12 +347,15 @@
 				DEVELOPMENT_TEAM = KM2C4ZAVPJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "STUWIRELESS-Login-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pattonium.scripts.STUWIRELESS-Login";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,12 +377,15 @@
 				DEVELOPMENT_TEAM = KM2C4ZAVPJ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "STUWIRELESS-Login-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pattonium.scripts.STUWIRELESS-Login";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -341,6 +416,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		206421D12BB54D2E00CD5A43 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		207060782BB3F14800E9DD4F /* XCRemoteSwiftPackageReference "Sjauth" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnbean393/Sjauth";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		20C954E92BB3FF570017E05E /* XCRemoteSwiftPackageReference "ExtensionKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnbean393/ExtensionKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		206421D22BB54D2E00CD5A43 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 206421D12BB54D2E00CD5A43 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+		207060792BB3F14800E9DD4F /* Sjauth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 207060782BB3F14800E9DD4F /* XCRemoteSwiftPackageReference "Sjauth" */;
+			productName = Sjauth;
+		};
+		20C954EA2BB3FF570017E05E /* ExtensionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20C954E92BB3FF570017E05E /* XCRemoteSwiftPackageReference "ExtensionKit" */;
+			productName = ExtensionKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 20E66A4A2BB3062500F0AF08 /* Project object */;
 }

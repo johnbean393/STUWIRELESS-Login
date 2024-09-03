@@ -1,0 +1,33 @@
+{
+  "originHash" : "e57c101725810f4115c3455f5056104d5f2c37edd4cd4c14da421fdf4629b2b5",
+  "pins" : [
+    {
+      "identity" : "extensionkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/johnbean393/ExtensionKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d2c4cda688cbfa614d4f70a5a9c6084fcf253ca7"
+      }
+    },
+    {
+      "identity" : "launchatlogin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/LaunchAtLogin.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "22923d335429bfd38c52435505b06a10bcc520fd"
+      }
+    },
+    {
+      "identity" : "sjauth",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/johnbean393/Sjauth",
+      "state" : {
+        "branch" : "main",
+        "revision" : "debc40603dcc3675fb6cfd52bc8ae0a9ba5af40f"
+      }
+    }
+  ],
+  "version" : 3
+}
