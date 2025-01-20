@@ -10,7 +10,11 @@ import SwiftUI
 struct IntroductionView: View {
 	
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		Text("Welcome to STUWIRELESS Login. Please follow the instructions to setup auto login.")
+			.font(.title3)
+			.bold()
+			.multilineTextAlignment(.leading)
+			.fixedSize(horizontal: false, vertical: true)
     }
 	
 }

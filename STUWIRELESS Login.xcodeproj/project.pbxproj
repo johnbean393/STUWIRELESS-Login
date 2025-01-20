@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		206421D32BB54D2E00CD5A43 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 206421D22BB54D2E00CD5A43 /* LaunchAtLogin */; };
 		2070607A2BB3F14800E9DD4F /* Sjauth in Frameworks */ = {isa = PBXBuildFile; productRef = 207060792BB3F14800E9DD4F /* Sjauth */; };
+		2076DE392D3E31000048ECB1 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076DE382D3E31000048ECB1 /* OnboardingViewModel.swift */; };
+		2076DE3C2D3E32E60048ECB1 /* Extensions+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076DE3B2D3E32E60048ECB1 /* Extensions+UserDefaults.swift */; };
+		2076DE3E2D3E33380048ECB1 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076DE3D2D3E33380048ECB1 /* IntroductionView.swift */; };
+		2076DE412D3E33BB0048ECB1 /* DoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076DE402D3E33BB0048ECB1 /* DoneView.swift */; };
 		20B5734F2C870CFB00255BEC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 20B5734E2C870CFB00255BEC /* README.md */; };
 		20C954DE2BB3FB010017E05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954DD2BB3FB010017E05E /* AppDelegate.swift */; };
 		20C954E62BB3FE340017E05E /* WakeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E52BB3FE340017E05E /* WakeDelegate.swift */; };
-		20C954E82BB3FEB80017E05E /* CredentialsLoggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E72BB3FEB80017E05E /* CredentialsLoggingView.swift */; };
+		20C954E82BB3FEB80017E05E /* CredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E72BB3FEB80017E05E /* CredentialsView.swift */; };
 		20C954EB2BB3FF570017E05E /* ExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 20C954EA2BB3FF570017E05E /* ExtensionKit */; };
 		20E66A562BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E66A552BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift */; };
 		20E66A582BB3062500F0AF08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E66A572BB3062500F0AF08 /* ContentView.swift */; };
@@ -21,10 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2076DE382D3E31000048ECB1 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		2076DE3B2D3E32E60048ECB1 /* Extensions+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UserDefaults.swift"; sourceTree = "<group>"; };
+		2076DE3D2D3E33380048ECB1 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		2076DE402D3E33BB0048ECB1 /* DoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneView.swift; sourceTree = "<group>"; };
 		20B5734E2C870CFB00255BEC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		20C954DD2BB3FB010017E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C954E52BB3FE340017E05E /* WakeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeDelegate.swift; sourceTree = "<group>"; };
-		20C954E72BB3FEB80017E05E /* CredentialsLoggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsLoggingView.swift; sourceTree = "<group>"; };
+		20C954E72BB3FEB80017E05E /* CredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsView.swift; sourceTree = "<group>"; };
 		20E66A522BB3062500F0AF08 /* STUWIRELESS Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STUWIRELESS Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E66A552BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUWIRELESS_LoginApp.swift; sourceTree = "<group>"; };
 		20E66A572BB3062500F0AF08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,10 +56,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2076DE3A2D3E32DA0048ECB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2076DE3B2D3E32E60048ECB1 /* Extensions+UserDefaults.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2076DE3F2D3E335C0048ECB1 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				2076DE3D2D3E33380048ECB1 /* IntroductionView.swift */,
+				2076DE402D3E33BB0048ECB1 /* DoneView.swift */,
+				20C954E72BB3FEB80017E05E /* CredentialsView.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
 		20C954EC2BB3FFBC0017E05E /* Logic */ = {
 			isa = PBXGroup;
 			children = (
 				20C954E52BB3FE340017E05E /* WakeDelegate.swift */,
+				2076DE382D3E31000048ECB1 /* OnboardingViewModel.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -60,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				20E66A572BB3062500F0AF08 /* ContentView.swift */,
-				20C954E72BB3FEB80017E05E /* CredentialsLoggingView.swift */,
+				2076DE3F2D3E335C0048ECB1 /* Steps */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -90,6 +117,7 @@
 				20E66A552BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift */,
 				20C954ED2BB3FFC40017E05E /* Views */,
 				20C954EC2BB3FFBC0017E05E /* Logic */,
+				2076DE3A2D3E32DA0048ECB1 /* Extensions */,
 				20E66A592BB3062B00F0AF08 /* Assets.xcassets */,
 				20E66A5E2BB3062B00F0AF08 /* STUWIRELESS_Login.entitlements */,
 				20E66A5B2BB3062B00F0AF08 /* Preview Content */,
@@ -210,10 +238,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C954E62BB3FE340017E05E /* WakeDelegate.swift in Sources */,
+				2076DE392D3E31000048ECB1 /* OnboardingViewModel.swift in Sources */,
+				2076DE3C2D3E32E60048ECB1 /* Extensions+UserDefaults.swift in Sources */,
 				20C954DE2BB3FB010017E05E /* AppDelegate.swift in Sources */,
 				20E66A582BB3062500F0AF08 /* ContentView.swift in Sources */,
+				2076DE412D3E33BB0048ECB1 /* DoneView.swift in Sources */,
 				20E66A562BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift in Sources */,
-				20C954E82BB3FEB80017E05E /* CredentialsLoggingView.swift in Sources */,
+				2076DE3E2D3E33380048ECB1 /* IntroductionView.swift in Sources */,
+				20C954E82BB3FEB80017E05E /* CredentialsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +391,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pattonium.scripts.STUWIRELESS-Login";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,7 +421,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pattonium.scripts.STUWIRELESS-Login";
 				PRODUCT_NAME = "$(TARGET_NAME)";

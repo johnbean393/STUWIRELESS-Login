@@ -9,16 +9,48 @@ import SwiftUI
 
 struct ContentView: View {
 	
+	@StateObject private var onboardingViewModel = OnboardingViewModel()
+	
     var body: some View {
 		VStack {
-			Text("This app will log you into STUWIRELESS when it wakes from sleep")
-				.font(.title3)
-				.bold()
-			CredentialsLoggingView()
+			Group {
+				switch self.onboardingViewModel.currentStep {
+					case .intro:
+						IntroductionView()
+					case .credentials:
+						CredentialsView()
+					case .done:
+						DoneView()
+				}
+			}
+			if self.onboardingViewModel.currentStep != .credentials {
+				self.stepSwitcher
+			}
 		}
 		.padding()
-		.frame(width: 600)
+		.frame(maxWidth: 400, maxHeight: 300)
+		.environmentObject(onboardingViewModel)
     }
+	
+	var stepSwitcher: some View {
+		HStack {
+			Button {
+				self.onboardingViewModel.currentStep.prevStep()
+			} label: {
+				Text("Previous")
+			}
+			.disabled(!self.onboardingViewModel.currentStep.hasPrevStep)
+			Button {
+				self.onboardingViewModel.currentStep.nextStep()
+			} label: {
+				Text("Next")
+			}
+			.disabled(!self.onboardingViewModel.currentStep.hasNextStep)
+		}
+		.buttonStyle(.bordered)
+		.controlSize(.large)
+		.padding(.top)
+	}
 	
 }
 

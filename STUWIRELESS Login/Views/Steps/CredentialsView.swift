@@ -9,58 +9,69 @@ import SwiftUI
 
 struct CredentialsView: View {
 	
+	@EnvironmentObject private var onboardingViewModel: OnboardingViewModel
+	
 	@AppStorage("username") var username: String = ""
 	@AppStorage("password") var password: String = ""
 	
-	@State private var showPassword: Bool = false
+	var isDone: Bool { !username.isEmpty && !password.isEmpty }
 	
 	var body: some View {
-		GroupBox {
-			VStack {
-				usernameField
-				passwordField
-				HStack {
-					Button("Save") {
-						UserDefaults.standard.setValue(username, forKey: "username")
-						UserDefaults.standard.setValue(password, forKey: "password")
-					}
-					Button("Login") {
-						WakeDelegate.loginToStuWireless()
-					}
-					.keyboardShortcut(.defaultAction)
+		VStack {
+			Form {
+				Section {
+					usernameField
+					passwordField
+				} header: {
+					Text("Login Credentials")
 				}
 			}
-			.padding()
-			.textFieldStyle(.roundedBorder)
+			.formStyle(.grouped)
+			prevAndNextButton
 		}
+		.textFieldStyle(.roundedBorder)
+		.frame(
+			minWidth: 400,
+			minHeight: 200
+		)
 	}
 	
 	var usernameField: some View {
-		HStack {
-			Text("Username: ")
-			TextField("Username", text: $username)
-				.onChange(of: username) { _ in
-					UserDefaults.standard.setValue(username, forKey: "username")
-				}
-		}
+		TextField("Username", text: $username)
+			.onChange(of: username) { _ in
+				UserDefaults.standard.setValue(username, forKey: "username")
+			}
 	}
 	
 	var passwordField: some View {
-		HStack {
-			Text("Password: ")
-			Group {
-				if !showPassword {
-					SecureField("Password", text: $password)
-				} else {
-					TextField("Password", text: $password)
-				}
-			}
+		SecureField("Password", text: $password)
 			.onChange(of: password) { _ in
 				UserDefaults.standard.setValue(password, forKey: "password")
 			}
-			Toggle("Show", isOn: $showPassword)
-				.toggleStyle(.switch)
+	}
+	
+	var prevAndNextButton: some View {
+		HStack {
+			Button("Previous") {
+				self.onboardingViewModel.currentStep.prevStep()
+			}
+			Button("Next") {
+				if isDone {
+					UserDefaults.standard.setValue(
+						username,
+						forKey: "username"
+					)
+					UserDefaults.standard.setValue(
+						password,
+						forKey: "password"
+					)
+					self.onboardingViewModel.currentStep.nextStep()
+				}
+			}
 		}
+		.buttonStyle(.bordered)
+		.controlSize(.large)
+		.padding(.top)
 	}
 	
 }
