@@ -70,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				2076DE3D2D3E33380048ECB1 /* IntroductionView.swift */,
-				2076DE402D3E33BB0048ECB1 /* DoneView.swift */,
 				20C954E72BB3FEB80017E05E /* CredentialsView.swift */,
+				2076DE402D3E33BB0048ECB1 /* DoneView.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";

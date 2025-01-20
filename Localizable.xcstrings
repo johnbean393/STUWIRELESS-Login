@@ -1,6 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "**Setup Complete**" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初始化完成"
+          }
+        }
+      }
+    },
     "Login Credentials" : {
       "localizations" : {
         "zh-Hans" : {
@@ -51,12 +61,12 @@
         }
       }
     },
-    "This app will automatically log you into STUWIRELESS when your Mac wakes from sleep." : {
+    "This app will automatically log you into STUWIRELESS when your Mac wakes from sleep. **You can now close this window.**" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "当您的 Mac 从睡眠状态唤醒时，此应用程序将自动将您登录到 STUWIRELESS。"
+            "value" : "当您的 Mac 从睡眠状态唤醒时，此应用程序将自动将您登录到 STUWIRELESS。**你现在可以关闭此窗口。**"
           }
         }
       }
