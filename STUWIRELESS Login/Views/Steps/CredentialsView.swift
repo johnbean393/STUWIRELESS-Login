@@ -66,6 +66,8 @@ struct CredentialsView: View {
 						forKey: "password"
 					)
 					self.onboardingViewModel.currentStep.nextStep()
+					// Mark as setup
+					UserDefaults.standard.set(true, forKey: "didSetUp")
 				}
 			}
 		}
