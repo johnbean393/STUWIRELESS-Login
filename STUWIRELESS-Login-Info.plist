@@ -7,7 +7,5 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>LSUIElement</key>
-	<true/>
 </dict>
 </plist>
