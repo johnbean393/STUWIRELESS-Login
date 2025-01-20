@@ -13,6 +13,7 @@
 		2076DE3C2D3E32E60048ECB1 /* Extensions+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076DE3B2D3E32E60048ECB1 /* Extensions+UserDefaults.swift */; };
 		2076DE3E2D3E33380048ECB1 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076DE3D2D3E33380048ECB1 /* IntroductionView.swift */; };
 		2076DE412D3E33BB0048ECB1 /* DoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2076DE402D3E33BB0048ECB1 /* DoneView.swift */; };
+		2076DE432D3E561E0048ECB1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2076DE422D3E561E0048ECB1 /* Localizable.xcstrings */; };
 		20B5734F2C870CFB00255BEC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 20B5734E2C870CFB00255BEC /* README.md */; };
 		20C954DE2BB3FB010017E05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954DD2BB3FB010017E05E /* AppDelegate.swift */; };
 		20C954E62BB3FE340017E05E /* WakeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E52BB3FE340017E05E /* WakeDelegate.swift */; };
@@ -29,6 +30,7 @@
 		2076DE3B2D3E32E60048ECB1 /* Extensions+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UserDefaults.swift"; sourceTree = "<group>"; };
 		2076DE3D2D3E33380048ECB1 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
 		2076DE402D3E33BB0048ECB1 /* DoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneView.swift; sourceTree = "<group>"; };
+		2076DE422D3E561E0048ECB1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		20B5734E2C870CFB00255BEC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		20C954DD2BB3FB010017E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C954E52BB3FE340017E05E /* WakeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		20E66A492BB3062500F0AF08 = {
 			isa = PBXGroup;
 			children = (
+				2076DE422D3E561E0048ECB1 /* Localizable.xcstrings */,
 				20B5734E2C870CFB00255BEC /* README.md */,
 				20E66A542BB3062500F0AF08 /* STUWIRELESS Login */,
 				20E66A532BB3062500F0AF08 /* Products */,
@@ -181,6 +184,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 20E66A492BB3062500F0AF08;
 			packageReferences = (
@@ -204,6 +208,7 @@
 			files = (
 				20B5734F2C870CFB00255BEC /* README.md in Resources */,
 				20E66A5D2BB3062B00F0AF08 /* Preview Assets.xcassets in Resources */,
+				2076DE432D3E561E0048ECB1 /* Localizable.xcstrings in Resources */,
 				20E66A5A2BB3062B00F0AF08 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +316,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -367,6 +373,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};

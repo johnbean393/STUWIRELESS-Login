@@ -4,7 +4,7 @@
 
 # Installation
 
-Download the [package](https://github.com/johnbean393/STUWIRELESS-Login/releases/download/Default/STUWIRELESS.Login.pkg) and launch it. Note that since it is not notarized, you will need to enable it in System Settings.
+Download the [disk image](https://github.com/johnbean393/STUWIRELESS-Login/releases/download/Default/STUWIRELESS.Login.dmg), mount it, and drag the app into the Applications folder to install it.
 
 Alternatively, clone the GitHub repo and open the project in Xcode:
 
@@ -16,5 +16,5 @@ Build the app and run it!
 
 # Usage
 
-Launch the app, enter your login credentials, and hit save. The app will log you into the STUWIRELESS network when your Mac wakes from sleep.
+Launch the app, then enter your login credentials. The app will automatically log you into the STUWIRELESS network when your Mac wakes from sleep.
 
