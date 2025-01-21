@@ -4,7 +4,7 @@
 
 # Installation
 
-Download the [disk image](https://github.com/johnbean393/STUWIRELESS-Login/releases/download/2.0.0/STUWIRELESS.Login.2.0.2025-01-20.dmg), mount it, and drag the app into the Applications folder to install it.
+Download the [disk image](https://github.com/johnbean393/STUWIRELESS-Login/releases/download/2.0.0/STUWIRELESS.Login.2.0.2025-01-21.dmg), mount it, and drag the app into the Applications folder to install it.
 
 Alternatively, clone the GitHub repo and open the project in Xcode:
 
