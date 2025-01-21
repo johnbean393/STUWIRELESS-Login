@@ -18,9 +18,9 @@
 		20C954E62BB3FE340017E05E /* WakeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E52BB3FE340017E05E /* WakeDelegate.swift */; };
 		20C954E82BB3FEB80017E05E /* CredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C954E72BB3FEB80017E05E /* CredentialsView.swift */; };
 		20C954EB2BB3FF570017E05E /* ExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 20C954EA2BB3FF570017E05E /* ExtensionKit */; };
+		20E02FB92D3FA2400015827D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E02FB82D3FA2400015827D /* Assets.xcassets */; };
 		20E66A562BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E66A552BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift */; };
 		20E66A582BB3062500F0AF08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E66A572BB3062500F0AF08 /* ContentView.swift */; };
-		20E66A5A2BB3062B00F0AF08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E66A592BB3062B00F0AF08 /* Assets.xcassets */; };
 		20E66A5D2BB3062B00F0AF08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E66A5C2BB3062B00F0AF08 /* Preview Assets.xcassets */; };
 		20E908A12D3E5DF600AC1A9C /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 20E908A02D3E5DF600AC1A9C /* LaunchAtLogin */; };
 /* End PBXBuildFile section */
@@ -35,10 +35,10 @@
 		20C954DD2BB3FB010017E05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C954E52BB3FE340017E05E /* WakeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeDelegate.swift; sourceTree = "<group>"; };
 		20C954E72BB3FEB80017E05E /* CredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsView.swift; sourceTree = "<group>"; };
+		20E02FB82D3FA2400015827D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20E66A522BB3062500F0AF08 /* STUWIRELESS Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STUWIRELESS Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E66A552BB3062500F0AF08 /* STUWIRELESS_LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUWIRELESS_LoginApp.swift; sourceTree = "<group>"; };
 		20E66A572BB3062500F0AF08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		20E66A592BB3062B00F0AF08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20E66A5C2BB3062B00F0AF08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20E66A5E2BB3062B00F0AF08 /* STUWIRELESS_Login.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = STUWIRELESS_Login.entitlements; sourceTree = "<group>"; };
 		20E66A682BB306FC00F0AF08 /* STUWIRELESS-Login-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "STUWIRELESS-Login-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -121,9 +121,9 @@
 				20C954ED2BB3FFC40017E05E /* Views */,
 				20C954EC2BB3FFBC0017E05E /* Logic */,
 				2076DE3A2D3E32DA0048ECB1 /* Extensions */,
-				20E66A592BB3062B00F0AF08 /* Assets.xcassets */,
 				20E66A5E2BB3062B00F0AF08 /* STUWIRELESS_Login.entitlements */,
 				20E66A5B2BB3062B00F0AF08 /* Preview Content */,
+				20E02FB82D3FA2400015827D /* Assets.xcassets */,
 			);
 			path = "STUWIRELESS Login";
 			sourceTree = "<group>";
@@ -208,8 +208,8 @@
 			files = (
 				20B5734F2C870CFB00255BEC /* README.md in Resources */,
 				20E66A5D2BB3062B00F0AF08 /* Preview Assets.xcassets in Resources */,
+				20E02FB92D3FA2400015827D /* Assets.xcassets in Resources */,
 				2076DE432D3E561E0048ECB1 /* Localizable.xcstrings in Resources */,
-				20E66A5A2BB3062B00F0AF08 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +385,7 @@
 				CODE_SIGN_ENTITLEMENTS = "STUWIRELESS Login/STUWIRELESS_Login.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"STUWIRELESS Login/Preview Content\"";
 				DEVELOPMENT_TEAM = KM2C4ZAVPJ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -417,7 +417,7 @@
 				CODE_SIGN_ENTITLEMENTS = "STUWIRELESS Login/STUWIRELESS_Login.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"STUWIRELESS Login/Preview Content\"";
 				DEVELOPMENT_TEAM = KM2C4ZAVPJ;
 				ENABLE_HARDENED_RUNTIME = YES;
